@@ -12,61 +12,61 @@ namespace MSNChatControl
         private bool interfacesAttached = false;
         private AxChatSettings? chatSettings;
 
-        private Color? _backColor;
-        [DefaultValue(typeof(Color), "255, 255, 255, 255")]
-        public override Color BackColor
-        {
-            set
-            {
-                if (interfacesAttached)
-                {
-                    chatSettings!.BackColor = value;
-                }
-                else
-                {
-                    this._backColor = value;
-                }
-            }
-            get
-            {
-                if (interfacesAttached)
-                {
-                    return chatSettings!.BackColor;
-                }
-                else
-                {
-                    return this._backColor ?? Color.FromArgb(255, 255, 255, 231);
-                }
-            }
-        }
+        //private Color? _backColor;
+        //[DefaultValue(typeof(Color), "255, 255, 255, 255")]
+        //public override Color BackColor
+        //{
+        //    set
+        //    {
+        //        if (interfacesAttached)
+        //        {
+        //            chatSettings!.BackColor = value;
+        //        }
+        //        else
+        //        {
+        //            this._backColor = value;
+        //        }
+        //    }
+        //    get
+        //    {
+        //        if (interfacesAttached)
+        //        {
+        //            return chatSettings!.BackColor;
+        //        }
+        //        else
+        //        {
+        //            return this._backColor ?? Color.FromArgb(255, 255, 255, 231);
+        //        }
+        //    }
+        //}
 
-        private Color? _foreColor;
-        [DefaultValue(typeof(Color), "255, 0, 0, 0")]
-        public override Color ForeColor
-        {
-            set
-            {
-                if (interfacesAttached)
-                {
-                    chatSettings!.ForeColor = value;
-                }
-                else
-                {
-                    this._foreColor = value;
-                }
-            }
-            get
-            {
-                if (interfacesAttached)
-                {
-                    return chatSettings!.ForeColor;
-                }
-                else
-                {
-                    return this._foreColor ?? Color.FromArgb(255, 0, 0, 0);
-                }
-            }
-        }
+        //private Color? _foreColor;
+        //[DefaultValue(typeof(Color), "255, 0, 0, 0")]
+        //public override Color ForeColor
+        //{
+        //    set
+        //    {
+        //        if (interfacesAttached)
+        //        {
+        //            chatSettings!.ForeColor = value;
+        //        }
+        //        else
+        //        {
+        //            this._foreColor = value;
+        //        }
+        //    }
+        //    get
+        //    {
+        //        if (interfacesAttached)
+        //        {
+        //            return chatSettings!.ForeColor;
+        //        }
+        //        else
+        //        {
+        //            return this._foreColor ?? Color.FromArgb(255, 0, 0, 0);
+        //        }
+        //    }
+        //}
 
         private string? _redirectURL;
         [DefaultValue("")]
