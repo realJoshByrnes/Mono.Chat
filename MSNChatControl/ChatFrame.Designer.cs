@@ -29,12 +29,7 @@ namespace MSNChatControl
         /// </summary>
         private void InitializeComponent()
         {
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
-            // 
-            // backgroundWorker1
-            // 
-            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
             // 
             // ChatFrame
             // 
@@ -47,7 +42,5 @@ namespace MSNChatControl
         }
 
         #endregion
-
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

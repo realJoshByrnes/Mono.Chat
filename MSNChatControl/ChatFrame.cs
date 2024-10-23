@@ -3,6 +3,7 @@ using System.ComponentModel;
 using MSNChat45;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 namespace MSNChatControl
 {
@@ -1106,13 +1107,23 @@ namespace MSNChatControl
                     interfacesAttached = true;
                 };
                 chatFrame.Dock = DockStyle.Fill;
-                Controls.Add(chatFrame);
+                try
+                {
+                    Controls.Add(chatFrame);
+                }
+                catch (COMException ce)
+                {
+                    if (ce.ErrorCode == -2147221164) // REGDB_E_CLASSNOTREG
+                    {
+                        chatFrame.Dispose();
+                        MessageBox.Show("The MSN Chat Control could not be found.", "Unable to load MsnChat45.ocx", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
             }
-        }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-
         }
     }
 }
