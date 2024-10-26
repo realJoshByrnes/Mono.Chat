@@ -1106,7 +1106,6 @@ namespace MSNChatControl
                     chatFrame.SubscriberInfo = this.SubscriberInfo;
                     chatFrame.UpsellURL = this.UpsellURL;
                     interfacesAttached = true;
-                    Debug.WriteLine("ChatFrame interfaces attached.");
                 };
                 chatFrame.Dock = DockStyle.Fill;
                 try

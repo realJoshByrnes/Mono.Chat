@@ -33,7 +33,6 @@
             settingsToolStripMenuItem = new ToolStripMenuItem();
             openInInternetExplorerToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
-            statusStrip1 = new StatusStrip();
             chatFrameTab = new TabControl();
             tabPage1 = new TabPage();
             menuStrip1.SuspendLayout();
@@ -83,15 +82,6 @@
             exitToolStripMenuItem.Text = "E&xit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
-            // statusStrip1
-            // 
-            statusStrip1.BackColor = SystemColors.Control;
-            statusStrip1.Location = new Point(0, 631);
-            statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1285, 22);
-            statusStrip1.TabIndex = 1;
-            statusStrip1.Text = "statusStrip1";
-            // 
             // chatFrameTab
             // 
             chatFrameTab.Alignment = TabAlignment.Left;
@@ -103,7 +93,7 @@
             chatFrameTab.Multiline = true;
             chatFrameTab.Name = "chatFrameTab";
             chatFrameTab.SelectedIndex = 0;
-            chatFrameTab.Size = new Size(1285, 607);
+            chatFrameTab.Size = new Size(1285, 629);
             chatFrameTab.SizeMode = TabSizeMode.Fixed;
             chatFrameTab.TabIndex = 2;
             // 
@@ -112,7 +102,7 @@
             tabPage1.Location = new Point(204, 4);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1077, 599);
+            tabPage1.Size = new Size(1077, 621);
             tabPage1.TabIndex = 0;
             tabPage1.Text = " The Lobby";
             tabPage1.UseVisualStyleBackColor = true;
@@ -124,7 +114,6 @@
             BackColor = SystemColors.Control;
             ClientSize = new Size(1285, 653);
             Controls.Add(chatFrameTab);
-            Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
@@ -143,7 +132,6 @@
         private ToolStripMenuItem settingsToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
         private ToolStripMenuItem openInInternetExplorerToolStripMenuItem;
-        private StatusStrip statusStrip1;
         private TabControl chatFrameTab;
         private TabPage tabPage1;
     }
