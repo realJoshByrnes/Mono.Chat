@@ -28,18 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
+            chatHeader1 = new ChatHeader();
+            cfPanel = new Panel();
             SuspendLayout();
+            // 
+            // chatHeader1
+            // 
+            chatHeader1.Dock = DockStyle.Top;
+            chatHeader1.Location = new Point(0, 0);
+            chatHeader1.Name = "chatHeader1";
+            chatHeader1.Size = new Size(800, 106);
+            chatHeader1.TabIndex = 0;
+            // 
+            // cfPanel
+            // 
+            cfPanel.Dock = DockStyle.Fill;
+            cfPanel.Location = new Point(0, 106);
+            cfPanel.Name = "cfPanel";
+            cfPanel.Size = new Size(800, 422);
+            cfPanel.TabIndex = 1;
             // 
             // ChannelForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 528);
+            Controls.Add(cfPanel);
+            Controls.Add(chatHeader1);
             Name = "ChannelForm";
             Text = "ChannelForm";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private ChatHeader chatHeader1;
+        public Panel cfPanel;
     }
 }

@@ -104,7 +104,8 @@ namespace Mono.Chat
             form.Text = "The Lobby";
             var cf = cfm.createChatFrame();
             cf.Dock = DockStyle.Fill;
-            form.Controls.Add(cf);
+            form.cfPanel.Controls.Add(cf);
+            //form.Controls.Add(cf);
             form.Show();
         }
     }
