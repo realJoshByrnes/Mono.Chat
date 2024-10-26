@@ -1,0 +1,117 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Mono.Chat.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AuditMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Note: MSN has detected that you are connected to this chat session from the IP address &lt;B&gt;%1&lt;/B&gt;.</Value>
+    </Setting>
+    <Setting Name="BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">255, 255, 231</Value>
+    </Setting>
+    <Setting Name="BaseURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://chat.msn.com/</Value>
+    </Setting>
+    <Setting Name="ButtonBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">202, 224, 245</Value>
+    </Setting>
+    <Setting Name="ButtonFrameColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">102, 153, 255</Value>
+    </Setting>
+    <Setting Name="ButtonTextColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="Category" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GN</Value>
+    </Setting>
+    <Setting Name="ChannelLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ChatHome" Type="System.String" Scope="User">
+      <Value Profile="(Default)">messenger.msnw</Value>
+    </Setting>
+    <Setting Name="CreateRoom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">create.msnw?fMsgr=true&amp;</Value>
+    </Setting>
+    <Setting Name="CreationModes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">f</Value>
+    </Setting>
+    <Setting Name="Feature" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="HexRoomName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="InputBorderColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">74, 101, 156</Value>
+    </Setting>
+    <Setting Name="InvitationCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Locale" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Market" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en-us</Value>
+    </Setting>
+    <Setting Name="MessageOfTheDay" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Welcome to MSN Chat! MSN does not control or endorse the content, messages or information found in chat. MSN specifically disclaims any liability with regard to these areas. To review the MSN Chat guidelines, go to http://groups.msn.com/conduct NOTICE: To help protect you from spam, MSN Chat is now available by subscription only. Learn more at http://getchat.msn.com</Value>
+    </Setting>
+    <Setting Name="MSNProfile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MSNREGCookie" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NickName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NicknameToInvite" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PassportProfile" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PassportTicket" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ResDLL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RoomName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The Lobby</Value>
+    </Setting>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dir.irc7.com:6667</Value>
+    </Setting>
+    <Setting Name="SubscriberInfo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TopBackHighlightColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">165, 178, 206</Value>
+    </Setting>
+    <Setting Name="Topic" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UpsellURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">subscribe.msnw</Value>
+    </Setting>
+    <Setting Name="URLBack" Type="System.String" Scope="User">
+      <Value Profile="(Default)">messenger.msnw</Value>
+    </Setting>
+    <Setting Name="UserRole" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WelcomeMsg" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WhisperContent" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://chat.msn.com/whisper.msnw</Value>
+    </Setting>
+    <Setting Name="BackHighlightColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">239, 239, 247</Value>
+    </Setting>
+    <Setting Name="ChatMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

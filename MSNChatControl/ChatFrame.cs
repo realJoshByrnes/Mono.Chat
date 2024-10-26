@@ -13,6 +13,11 @@ namespace MSNChatControl
         private bool interfacesAttached = false;
         private AxMSNChatFrame? chatFrame;
 
+        public ChatFrame()
+        {
+            InitializeComponent();
+        }
+
         private Color? _backColor;
         [DefaultValue(typeof(Color), "255, 255, 255, 231")]
         public override Color BackColor
@@ -988,10 +993,12 @@ namespace MSNChatControl
             {
                 if (interfacesAttached)
                 {
+                    Debug.WriteLine("Set external auditmessage");
                     chatFrame!.AuditMessage = value;
                 }
                 else
                 {
+                    Debug.WriteLine("Set internal auditmessage");
                     this.auditMessage = value;
                 }
             }
@@ -1053,11 +1060,6 @@ namespace MSNChatControl
             }
         }
 
-        public ChatFrame()
-        {
-            InitializeComponent();
-        }
-
         private void MSNChatFrame_Load(object sender, EventArgs e)
         {
             // The 32-bit ActiveX control won't work in the designer, so we have to create it ONLY at runtime.
@@ -1103,8 +1105,8 @@ namespace MSNChatControl
                     chatFrame.AuditMessage = this.AuditMessage;
                     chatFrame.SubscriberInfo = this.SubscriberInfo;
                     chatFrame.UpsellURL = this.UpsellURL;
-
                     interfacesAttached = true;
+                    Debug.WriteLine("ChatFrame interfaces attached.");
                 };
                 chatFrame.Dock = DockStyle.Fill;
                 try
