@@ -17,6 +17,18 @@ namespace Mono.Chat
                 openInInternetExplorerToolStripMenuItem.Enabled = true;
             }
             chatFrameTab.DrawItem += new DrawItemEventHandler(chatFrameTab_DrawItem);
+            chatFrameTab.SelectedIndexChanged += (object? sender, EventArgs e) =>
+            {
+                if (chatFrameTab.SelectedTab != null)
+                {
+                    var form = ((Form)chatFrameTab.SelectedTab?.Tag!);
+                    if (form.WindowState == FormWindowState.Minimized)
+                        Utilities.Restore(form);
+                    form.Activate();
+                }
+            };
+            chatFrameTab.Height = chatFrameTab.ItemSize.Width;
+            chatFrameTab.Width = chatFrameTab.ItemSize.Height;
         }
 
         private void chatFrameTab_DrawItem(object? sender, DrawItemEventArgs e)
@@ -79,13 +91,21 @@ namespace Mono.Chat
             ie.Open();
         }
 
+        private ChatFrameManager cfm = new ChatFrameManager();
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            var cfm = new ChatFrameManager();
+            channelToolStripMenuItem_Click(this, new EventArgs());
+        }
+
+        private void channelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new ChannelForm(this, chatFrameTab);
+            form.Text = "The Lobby";
             var cf = cfm.createChatFrame();
             cf.Dock = DockStyle.Fill;
-            cf.Visible = true;
-            tabPage1.Controls.Add(cf);
+            form.Controls.Add(cf);
+            form.Show();
         }
     }
 }

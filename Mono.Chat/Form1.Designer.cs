@@ -34,9 +34,9 @@
             openInInternetExplorerToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
             chatFrameTab = new TabControl();
-            tabPage1 = new TabPage();
+            newToolStripMenuItem = new ToolStripMenuItem();
+            channelToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
-            chatFrameTab.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -51,7 +51,7 @@
             // 
             // fileToolStripMenuItem
             // 
-            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { settingsToolStripMenuItem, openInInternetExplorerToolStripMenuItem, exitToolStripMenuItem });
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, settingsToolStripMenuItem, openInInternetExplorerToolStripMenuItem, exitToolStripMenuItem });
             fileToolStripMenuItem.ForeColor = SystemColors.ControlText;
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             fileToolStripMenuItem.Size = new Size(37, 20);
@@ -85,8 +85,7 @@
             // chatFrameTab
             // 
             chatFrameTab.Alignment = TabAlignment.Left;
-            chatFrameTab.Controls.Add(tabPage1);
-            chatFrameTab.Dock = DockStyle.Fill;
+            chatFrameTab.Dock = DockStyle.Left;
             chatFrameTab.DrawMode = TabDrawMode.OwnerDrawFixed;
             chatFrameTab.ItemSize = new Size(32, 200);
             chatFrameTab.Location = new Point(0, 24);
@@ -97,15 +96,19 @@
             chatFrameTab.SizeMode = TabSizeMode.Fixed;
             chatFrameTab.TabIndex = 2;
             // 
-            // tabPage1
+            // newToolStripMenuItem
             // 
-            tabPage1.Location = new Point(204, 4);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1077, 621);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = " The Lobby";
-            tabPage1.UseVisualStyleBackColor = true;
+            newToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { channelToolStripMenuItem });
+            newToolStripMenuItem.Name = "newToolStripMenuItem";
+            newToolStripMenuItem.Size = new Size(205, 22);
+            newToolStripMenuItem.Text = "&New";
+            // 
+            // channelToolStripMenuItem
+            // 
+            channelToolStripMenuItem.Name = "channelToolStripMenuItem";
+            channelToolStripMenuItem.Size = new Size(180, 22);
+            channelToolStripMenuItem.Text = "Channel";
+            channelToolStripMenuItem.Click += channelToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -115,13 +118,13 @@
             ClientSize = new Size(1285, 653);
             Controls.Add(chatFrameTab);
             Controls.Add(menuStrip1);
+            IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Mono.Chat";
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            chatFrameTab.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,6 +136,7 @@
         private ToolStripMenuItem exitToolStripMenuItem;
         private ToolStripMenuItem openInInternetExplorerToolStripMenuItem;
         private TabControl chatFrameTab;
-        private TabPage tabPage1;
+        private ToolStripMenuItem newToolStripMenuItem;
+        private ToolStripMenuItem channelToolStripMenuItem;
     }
 }
